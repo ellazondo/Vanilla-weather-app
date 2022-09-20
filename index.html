@@ -17,100 +17,56 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <form id="search-form">
-            <input
-              type="text"
-              placeholder="Search for a city..."
-              autocomplete="off"
-              autofocus="on"
-              id="search-city-input"
-            />
-            <input typer="submit" value="Search" />
-          </form>
-          <div class="float-left" id="temp">
+          <div class="overview">
+            <form id="search-form">
+              <input
+                type="text"
+                placeholder="Search for a city..."
+                autocomplete="off"
+                autofocus="on"
+                id="search-city-input"
+              />
+              <input typer="submit" value="Search" />
+            </form>
+
             <h1>Amsterdam</h1>
             <ul>
               <li>Friday 05:00</li>
               <li>Clear</li>
             </ul>
-            <div class="boat">
-              <div class="col-6">
-                <div class="Clearfix">
-                  <img
-                    src="https://ss1.gstatic.com/onebox/weather/64/sunny.png"
-                    alt="Clear"
-                    class="float"
-                  />
-                  <div class="float-left" "temperature" "temp-click">
-                    26
-                    <span class="units">
-                      <a href="#" id="temp-c"> °C|</a
-                      ><a href="#" id="temp-f">°F</a></span
-                    >
-                  </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                  alt="Clear"
+                  class="float-left"
+                />
+                <div class="float-left">
+                  <strong>12</strong>
+                  <span class="units"> °C| <a href="#"">°F</a> </span>
                 </div>
               </div>
             </div>
-          </div>
 
-          <h2>Sunny</h2>
-          <h3>Current Day</h3>
-          <div class="row">
-            <div class="col-2">
-              <div class="card" style="width: 18rem">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Monday</li>
-                  <li class="list-group-item">⛈</li>
-                  <li class="list-group-item">30°</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="card" style="width: 18rem">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Tuesday</li>
-                  <li class="list-group-item">⛅️</li>
-                  <li class="list-group-item">31°</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="card" style="width: 18rem">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Wednesday</li>
-                  <li class="list-group-item">🌞</li>
-                  <li class="list-group-item">31°</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="card" style="width: 18rem">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Thursday</li>
-                  <li class="list-group-item">⛅️</li>
-                  <li class="list-group-item">29°</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="card" style="width: 18rem">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Friday</li>
-                  <li class="list-group-item">⛅️</li>
-                  <li class="list-group-item">29°</li>
-                </ul>
-              </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation</li>
+                <li>Humidity</li>
+                <li>Wind</li>
+              </ul>
             </div>
           </div>
         </div>
+        <small>
+          <a href="https://rococo-palmier-202860.netlify.app/" target="_blank"
+            >Open-source code</a
+          >
+          by Gabriella Elizondo
+        </small>
       </div>
-      <small>
-        <a href="https://rococo-palmier-202860.netlify.app/" target="_blank"
-          >Open-source code</a
-        >
-        by Gabriella Elizondo
-      </small>
     </div>
-    <script src="src/index.js"></script>
+    <script src="'src/app.js"></script>
   </body>
 </html>
