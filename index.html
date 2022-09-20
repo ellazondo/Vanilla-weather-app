@@ -10,82 +10,87 @@
     <title>Wireframe to HTML</title>
     <meta charset="UTF-8" />
 
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
 
   <body>
     <div class="container">
-      <form id="search-form">
-        <input
-          type="text"
-          placeholder="Other location?"
-          id="search-city-input"
-        />
-      </form>
-      <div class="float-left" id="temp">
-        <span class="temperature" id="temp-click">26</span
-        ><span class="units">
-          <a href="#" id="temp-c"> °C|</a><a href="#" id="temp-f">°F</a></span
-        >
-      </div>
+      <div class="weather-app">
+        <form id="search-form">
+          <input
+            type="text"
+            placeholder="Search for a city..."
+            autocomplete="off"
+            autofocus="on"
+            id="search-city-input"
+          />
+          <input typer="submit" value="Search" />
+        </form>
+        <div class="float-left" id="temp">
+          <span class="temperature" id="temp-click">26</span
+          ><span class="units">
+            <a href="#" id="temp-c"> °C|</a><a href="#" id="temp-f">°F</a></span
+          >
+        </div>
 
-      <h2>sunny</h2>
-      <img class="mount" src="img/image.png" />
-      <button id="city">Austin, Texas</button>
-      <h3>Current Day</h3>
-      <div class="row">
-        <div class="col-2">
-          <div class="card" style="width: 18rem">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Today</li>
-              <li class="list-group-item">🌞</li>
-              <li class="list-group-item">26°</li>
-            </ul>
+        <h2>Sunny</h2>
+        <img class="mount" src="img/image.png" />
+        <button id="city">Austin, Texas</button>
+        <h3>Current Day</h3>
+        <div class="row">
+          <div class="col-2">
+            <div class="card" style="width: 18rem">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Today</li>
+                <li class="list-group-item">🌞</li>
+                <li class="list-group-item">26°</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-2">
-          <div class="card" style="width: 18rem">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Monday</li>
-              <li class="list-group-item">⛈</li>
-              <li class="list-group-item">30°</li>
-            </ul>
+          <div class="col-2">
+            <div class="card" style="width: 18rem">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Monday</li>
+                <li class="list-group-item">⛈</li>
+                <li class="list-group-item">30°</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-2">
-          <div class="card" style="width: 18rem">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Tuesday</li>
-              <li class="list-group-item">⛅️</li>
-              <li class="list-group-item">31°</li>
-            </ul>
+          <div class="col-2">
+            <div class="card" style="width: 18rem">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Tuesday</li>
+                <li class="list-group-item">⛅️</li>
+                <li class="list-group-item">31°</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-2">
-          <div class="card" style="width: 18rem">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Wednesday</li>
-              <li class="list-group-item">🌞</li>
-              <li class="list-group-item">31°</li>
-            </ul>
+          <div class="col-2">
+            <div class="card" style="width: 18rem">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Wednesday</li>
+                <li class="list-group-item">🌞</li>
+                <li class="list-group-item">31°</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-2">
-          <div class="card" style="width: 18rem">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Thursday</li>
-              <li class="list-group-item">⛅️</li>
-              <li class="list-group-item">29°</li>
-            </ul>
+          <div class="col-2">
+            <div class="card" style="width: 18rem">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Thursday</li>
+                <li class="list-group-item">⛅️</li>
+                <li class="list-group-item">29°</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-2">
-          <div class="card" style="width: 18rem">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Friday</li>
-              <li class="list-group-item">⛅️</li>
-              <li class="list-group-item">29°</li>
-            </ul>
+          <div class="col-2">
+            <div class="card" style="width: 18rem">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Friday</li>
+                <li class="list-group-item">⛅️</li>
+                <li class="list-group-item">29°</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
