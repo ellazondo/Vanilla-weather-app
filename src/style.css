@@ -10,6 +10,10 @@ body {
   line-height: 48px;
 }
 
+h1 {
+  text-align: left;
+}
+
 .search-form {
   line-height: 28px;
   padding-top: 5px;
@@ -26,14 +30,12 @@ h2 {
   text-align: center;
   margin-top: 0;
 }
-img {
-  display: block;
-  margin: 0 auto;
-}
 
+.ul {
+  text-align: left;
+  margin: 0;
+}
 .weather-app {
-  max-width: 600px;
-  margin: 30px auto;
   padding: 20px;
   border: 1px solid #5a6bca;
   border-radius: 5px;
@@ -43,6 +45,7 @@ img {
   max-width: 550px;
 }
 
-.card .ul {
-  max-width: 575px;
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
 }
