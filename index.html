@@ -9,7 +9,7 @@
     />
     <title>Wireframe to HTML</title>
     <meta charset="UTF-8" />
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
 
@@ -29,10 +29,10 @@
               <input typer="submit" value="Search" />
             </form>
 
-            <h1>Amsterdam</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Friday 05:00</li>
-              <li>Clear</li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -44,7 +44,7 @@
                   class="float-left"
                 />
                 <div class="float-left">
-                  <strong>12</strong>
+                  <strong id="temperature"></strong>
                   <span class="units"> °C| <a href="#"">°F</a> </span>
                 </div>
               </div>
@@ -67,6 +67,6 @@
         </small>
       </div>
     </div>
-    <script src="'src/app.js"></script>
+    <script src="src/app.js"></script>
   </body>
 </html>
