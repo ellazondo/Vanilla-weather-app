@@ -47,6 +47,10 @@ li:first-letter {
 text-transform: capitalize;
 }
 
+h6:first-letter {
+  text-transform:capitalize;
+}
+
 .float-left {
   text-align: center;
 }
@@ -60,12 +64,10 @@ text-transform: capitalize;
   max-width: 600px;
   margin:30px auto;
   padding: 20px;
+  padding-bottom: 0;
   border: 1px solid #5a6bca;
   border-radius: 5px;
-}
-
-.overview {
-  margin-bottom: 20px;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
 .weather-temperature img {
@@ -74,24 +76,29 @@ text-transform: capitalize;
   width: 64px;
 }
 
-.weather-temperature strong {
+.float-left strong {
   color: rgb(33, 33, 33);
   font-size: 64px;
   font-weight: 400;
   line-height: 1;
 }
 
-.weather-temperature .units {
+.float-left .units {
   position: relative;
   font-size: 16px;
   top: -34px;
 }
 
-.weather-temperature .active {
+.float-left .active {
   color:rgb(33, 33, 33);
   cursor: default;
 }
 
-.weather-temperature .active:hover {
+.float-left .active:hover {
 text-decoration: none;
+}
+
+small {
+  font-size: 10px;
+  font-style: italic;
 }
