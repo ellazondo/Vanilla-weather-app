@@ -50,10 +50,12 @@ function displayForecast(response) {
           width="42"
         />
       <div class="weather-forecast-temp">
-          <span class="weather-forecast-temp-min"> $
-          {Math.round(forecastDay.temp.min)}°</span>
-          <span class="weather-forecast-temp-max"> $
-          {Math.round(forecastDay.temp.max)}°</span>
+          <span class="weather-forecast-temp-min"> ${Math.round(
+            forecastDay.temp.min
+          )}°</span>
+          <span class="weather-forecast-temp-max"> ${Math.round(
+            forecastDay.temp.max
+          )}°</span>
       </div>
     </div>
   
@@ -65,9 +67,9 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
-function getForecast(coord) {
-  let apiKey = "96771e971243152d6b8948878c26adde";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${coord.lat}&lon=${coord.lon}&appid=${apiKey}&units=metric`;
+function getForecast(coordinates) {
+  let apiKey = "f5029b784306910c19746e40c14d6cd3";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -98,7 +100,7 @@ function displayTemperature(response) {
 }
 
 function search(city) {
-  let apiKey = "96771e971243152d6b8948878c26adde";
+  let apiKey = "7e51999498b98449960c3d517772a9e2";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 }
